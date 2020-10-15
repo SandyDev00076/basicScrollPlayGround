@@ -1,0 +1,29 @@
+.App {
+}
+
+.block {
+  height: 50vh;
+  will-change: transform;
+}
+
+.block1 {
+  @extend .block;
+  background-color: aqua;
+  z-index: 3;
+  transform: translateY(var(--translateY1));
+  margin-top: 200px;
+}
+
+.block2 {
+  @extend .block;
+  background-color: blueviolet;
+  z-index: 1;
+  transform: translateY(var(--translateY2));
+}
+
+.block3 {
+  @extend .block;
+  background-color: cyan;
+  z-index: 0;
+  transform: translateY(var(--translateY3));
+}
